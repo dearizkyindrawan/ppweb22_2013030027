@@ -1,0 +1,40 @@
+body{
+	background: white;
+	font-family: sans-serif;
+}
+
+.kalkulator{
+	width: 350px;
+	background: red;
+	margin: 100px auto;
+	padding: 10px 20px 50px 20px;
+	border-radius: 5px;
+	box-shadow: 0px 10px 20px 0px gray;
+}
+
+.bil{
+	width: 300px;
+	margin: 5px;
+	border: none;
+	font-size: 16pt;
+	border-radius: 5px;
+	padding: 10px;
+}
+
+.opt{
+	font-size: 16pt;
+	border-top: none;
+	border-right: none;
+	border-left: none;
+	border-radius: 5px;
+	padding: 10px 20px;
+	color: black;
+	font-size: 15pt;
+	border-bottom: 40 solid gray;
+}
+
+.judul{
+	text-align: center;
+	color: black;
+	font-weight: normal;
+}
