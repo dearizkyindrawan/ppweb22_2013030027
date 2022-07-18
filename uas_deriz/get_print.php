@@ -14,7 +14,7 @@ if($total_row > 0)
   
    while ($row = $query ->fetch_object()) {    
     $output.= '
-        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+        <div class="col-4">
             <div class="offer offer-radius offer-warning">
                 <div class="shape">
                     <div class="shape-text">
@@ -22,10 +22,10 @@ if($total_row > 0)
                     </div>
                 </div>
                 <div class="offer-content">
-                    <h3 class="lead">'.$row->nama.'</h3>                        
+                    <p class="lead"><font  size="4">'.$row->nama.'</font></p>
                     <p>
-                        <small> '.$row->satuan.' -  Rp. '.$row->harga.'<br> '.$row->barcode.'
-                        </small>
+                        <font size="1"> '.$row->satuan.' -  Rp. '.$row->harga.'<br> '.$row->barcode.'
+                        </font>
                     </p>
                 </div>
             </div>
@@ -33,12 +33,6 @@ if($total_row > 0)
     }
    
     
-}else{
-    $output .= '
-    <tr>
-        <td colspan="5" align="center">No Data Found</td>
-    </tr>
-    ';
 }
 echo $output;
 ?>
